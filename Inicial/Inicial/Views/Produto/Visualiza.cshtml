@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Visualiza</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>@ViewBag.Produto.Id</td>
+                        <td>@ViewBag.Produto.Nome</td>
+                        <td>@ViewBag.Produto.Quantidade</td>
+                    </tr>
+            </tbody>
+        </table>
+
+        @Html.ActionLink("Voltar para a lista ","Index","Produto")
+
+    </div>
+</body>
+</html>

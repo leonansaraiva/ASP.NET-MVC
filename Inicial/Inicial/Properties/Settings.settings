@@ -3,7 +3,9 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Daata</Value>
+      <Value Profile="(Default)">
+          Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\leonan.saraiva\source\repos\Inicial\Inicial\App_Data\DBEstoque.mdf;Integrated Security=True;Connect Timeout=30
+        </Value>
     </Setting>
   </Settings>
 </SettingsFile>

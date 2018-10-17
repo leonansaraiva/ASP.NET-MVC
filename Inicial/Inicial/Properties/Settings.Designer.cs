@@ -25,7 +25,9 @@ namespace Inicial.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Daata")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\r\n          Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\leonan.s" +
+            "araiva\\source\\repos\\Inicial\\Inicial\\App_Data\\DBEstoque.mdf;Integrated Security=T" +
+            "rue;Connect Timeout=30\r\n        ")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
