@@ -11,6 +11,7 @@ namespace Inicial.Controllers
     public class ProdutoController : Controller
     {
         // GET: Produto
+        [Route("produtos", Name = "ListaProdutos")]
         public ActionResult Index()
         {
             ProdutosDAO dao = new ProdutosDAO();
@@ -51,12 +52,22 @@ namespace Inicial.Controllers
             }
         }
 
-
+        [Route("produtos/{id}", Name = "VisualizaProduto")]
         public ActionResult Visualiza(int id)
         {
             var dao = new ProdutosDAO();
             ViewBag.Produto = dao.BuscaPorId(id);
             return View();
+        }
+
+        public ActionResult DecrementaQtd(int id)
+        {
+            var dao = new ProdutosDAO();
+            var produto = dao.BuscaPorId(id);
+            produto.Quantidade--;
+            dao.Atualiza(produto);
+
+            return Json(produto);
         }
 
     }

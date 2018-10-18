@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Css/Site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="nav-item">@Html.ActionLink("Produtos", "Index", "Produto")</li>
+                <li class="nav-item">@Html.ActionLink("Categorias", "Index", "Categoria")</li>
+                <li class="nav-item">@Html.ActionLink("Usuários", "Index", "Usuario")</li>
+            </ul>
+            <h3 class="muted-text">Estoque</h3>
+        </div>
+        <div id="conteudo">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
