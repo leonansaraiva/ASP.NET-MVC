@@ -1,4 +1,5 @@
 ﻿using Inicial.DAO;
+using Inicial.Filtros;
 using Inicial.Models;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Web.Mvc;
 
 namespace Inicial.Controllers
 {
+    [AutorizacaoFilter]
     public class ProdutoController : Controller
     {
         // GET: Produto
